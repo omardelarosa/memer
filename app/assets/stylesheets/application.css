@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+.meme_image {
+  width: 200px;
+}

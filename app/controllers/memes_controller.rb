@@ -9,7 +9,21 @@ class MemesController < ApplicationController
   end
 
   def create
-
+    meme = Meme.new
+    meme.title = params[:meme][:title]
+    meme.description = params[:meme][:description]
+    meme.image = params[:meme][:image]
+    if meme.save!
+      render json: meme
+    else
+      render text: "Woops!"
+    end
   end
+
+  private
+
+  # def meme_params
+  #   params.require(:meme).permit(:title, :description, :image)
+  # end
 
 end

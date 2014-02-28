@@ -1,4 +1,4 @@
-<%= form_for(@meme, url: "/create", method: "POST") do |f| %>
+<%= form_for(@meme, method: "POST") do |f| %>
 
   Name: <%= f.text_field :title %>
   Description: <%= f.text_field :description %>
