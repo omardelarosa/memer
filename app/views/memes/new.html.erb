@@ -1,0 +1,8 @@
+<%= form_for(@meme, url: "/create", method: "POST") do |f| %>
+
+  Name: <%= f.text_field :title %>
+  Description: <%= f.text_field :description %>
+  Image: <%= f.file_field :image %>
+  <%= f.submit "Submit Meme" %>
+
+<% end %>
