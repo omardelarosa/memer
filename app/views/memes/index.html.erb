@@ -1,0 +1,8 @@
+<ul id="memes">
+<% @memes.each do |meme| %>
+  <li class="meme">
+  <p class="meme_title"><%= meme.title %></p>
+  <p class="meme_description"><%= meme.description %></p>
+  </li>
+<% end %>
+</ul>

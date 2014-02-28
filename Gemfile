@@ -32,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# IMAGE UPLOADING STUFF
+
+gem 'carrierwave'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
